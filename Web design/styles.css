@@ -1,0 +1,42 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Scorecard Styles */
+table.scorecard {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table.scorecard th, table.scorecard td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Pseudo-class styling for even rows */
+table.scorecard tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Golf Scorecard Specific Styles */
+table.scorecard.golf th {
+    background-color: #8cffa9;
+}
+
+/* Baseball Scorecard Specific Styles */
+table.scorecard.baseball th {
+    background-color: #a9a9ff;
+}
+
+/* Board Game Scorecard Specific Styles */
+table.scorecard.boardgame th {
+    background-color: #ffdb9e;
+}
