@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Assignment</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .name-section,
+        .puzzle-name-section,
+        .date-section {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .puzzle-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .puzzle-container {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 0;
+            justify-items: center;
+        }
+
+        .puzzle-piece {
+            width: 120px; 
+            height: 90px; 
+            margin: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="name-section">Paula Valdizan</div>
+        <div class="puzzle-name-section">Selected Puzzle: Butterflies</div>
+        <div class="date-section">Assignment Date: February 13, 2024</div>
+        <div class="puzzle-section">
+            <div class="puzzle-container">
+                <img src="Images/puzzle1_Q.jpg" alt="Piece Q" class="puzzle-piece">
+                <img src="Images/puzzle1_G.jpg" alt="Piece G" class="puzzle-piece">
+                <img src="Images/puzzle1_A.jpg" alt="Piece A" class="puzzle-piece">
+                <img src="Images/puzzle1_D.jpg" alt="Piece D" class="puzzle-piece" style="display: none;">
+                <img src="Images/puzzle1_J.jpg" alt="Piece J" class="puzzle-piece">
+                <img src="Images/puzzle1_M.jpg" alt="Piece M" class="puzzle-piece">
+                <img src="Images/puzzle1_P.jpg" alt="Piece P" class="puzzle-piece">
+                <img src="Images/puzzle1_B.jpg" alt="Piece B" class="puzzle-piece">
+                <img src="Images/puzzle1_H.jpg" alt="Piece H" class="puzzle-piece">
+                <img src="Images/puzzle1_O.jpg" alt="Piece O" class="puzzle-piece">
+                <img src="Images/puzzle1_E.jpg" alt="Piece E" class="puzzle-piece">
+                <img src="Images/puzzle1_N.jpg" alt="Piece N" class="puzzle-piece">
+                <img src="Images/puzzle1_C.jpg" alt="Piece C" class="puzzle-piece">
+                <img src="Images/puzzle1_I.jpg" alt="Piece I" class="puzzle-piece">
+                <img src="Images/puzzle1_F.jpg" alt="Piece F" class="puzzle-piece">
+                <img src="Images/puzzle1_L.jpg" alt="Piece L" class="puzzle-piece">
+                <img src="Images/puzzle1_K.jpg" alt="Piece K" class="puzzle-piece">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
