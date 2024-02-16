@@ -1,42 +1,165 @@
-/* Global Styles */
+/* styles.css */
+
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Pacifico', cursive; 
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: background-color 0.3s ease; 
+    background-image: url('Images/Mikasa.png'); 
+    background-size: cover;
+    background-position: right center; /* Posicionando la imagen a la derecha */
+    background-repeat: no-repeat;
 }
 
-h1 {
+header {
+    background-color: #00568f;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
-/* Scorecard Styles */
-table.scorecard {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table.scorecard th, table.scorecard td {
-    border: 1px solid #ddd;
+footer {
+    background-color: #00568f;
+    color: #fff;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Pseudo-class styling for even rows */
-table.scorecard tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Golf Scorecard Specific Styles */
-table.scorecard.golf th {
-    background-color: #8cffa9;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Baseball Scorecard Specific Styles */
-table.scorecard.baseball th {
-    background-color: #a9a9ff;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Board Game Scorecard Specific Styles */
-table.scorecard.boardgame th {
-    background-color: #ffdb9e;
+main {
+    padding: 20px;
 }
+
+.image {
+    max-width: 400px; /* Manteniendo el tamaño máximo de las imágenes */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Manteniendo la animación de agrandar */
+}
+
+/* Form styles */
+.styled-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.styled-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.styled-form button {
+    background-color: #00568f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.styled-form button:hover {
+    background-color: #003f6d;
+}
+
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilo para el texto dentro del contenedor */
+.text-container p {
+    margin: 0; 
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+   color: #FFFFFF,
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Page transition animation */
+@keyframes pageFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for image scaling on hover */
+.image:hover {
+    transform: scale(1.1);
+}
+
+/* Animation for background color change */
+body:hover {
+    background-color: #e6e6e6;
+}
+
+
+.image::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+    z-index: 1; 
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 100px;
+    height:50px;
+}
+
+
